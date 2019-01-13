@@ -90,7 +90,7 @@ gameOverSound = pygame.mixer.Sound('gameover.wav')
 pygame.mixer.music.load('background.mid')
 
 # set up images
-playerImage = pygame.image.load('player1.png')
+playerImage = pygame.image.load('player.png')
 playerstrImage=pygame.transform.scale(playerImage,(80,75))
 playerRect = playerstrImage.get_rect()
 baddieImage = pygame.image.load('baddie.png')
@@ -253,7 +253,7 @@ while True:
             BADDIEMAXSPEED = 5
             ADDNEWBADDIERATE=15
             w=random.randint(0,50)
-            playerImage = pygame.image.load('player2.png')
+            playerImage = pygame.image.load('player.png')
         elif 60<LEVEL<260:
             lev=3
             BADDIEMINSIZE = 60
@@ -262,7 +262,7 @@ while True:
             BADDIEMAXSPEED = 9
             ADDNEWBADDIERATE=10
             w=random.randint(0,50)
-            playerImage = pygame.image.load('player3.png')
+            playerImage = pygame.image.load('player.png')
         elif 260<LEVEL<560:
             lev=4
             BADDIEMINSIZE = 80
@@ -271,7 +271,7 @@ while True:
             BADDIEMAXSPEED = 13
             ADDNEWBADDIERATE=7
             w=random.randint(0,50)
-            playerImage = pygame.image.load('player4.png')
+            playerImage = pygame.image.load('player.png')
         elif 560<LEVEL<700:
             lev=5
             BADDIEMINSIZE = 100
@@ -280,7 +280,7 @@ while True:
             BADDIEMAXSPEED = 17
             ADDNEWBADDIERATE=5
             w=random.randint(0,50)
-            playerImage = pygame.image.load('player5.png')
+            playerImage = pygame.image.load('player.png')
         elif LEVEL>160:
             lev=6
         else :
